@@ -1,0 +1,19 @@
+
+void edmonds() {
+	for (int i=0; i<n; ++i)
+		if (Vertex i is not in matching) {
+			int last_v = find_augment_path (i);
+			if (last_v != -1)
+				Alternate along the path from i to last_v;
+		}
+}
+ 
+int find_augment_path (int root) {
+	Bypass width:
+		int v = Current vertex;
+		Go through all the edges from v
+			If you find a cycle of odd length, compress it
+			If you came to a free peak, return
+			If you came to a not free top, then add In a queue adjacent to it in a match
+	return -1;
+}

@@ -1,0 +1,31 @@
+//a.) array with pre-defined data types
+
+	int cmp(const void *a, const void *b) {
+		return(*(int*)a - *(int*)b);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//b.) array with user defined data type
+
+	for struct temp ( with data members x and y )
+	
+	int cmp(const void *a, const void *b) {
+		struct temp *c = (struct temp *)a;
+		struct temp *d = (struct temp *)b;
+		if((c->x - d->x) == 0) {
+			return c->y - d->y ;
+		}
+		return c->x - d->x;
+	}
